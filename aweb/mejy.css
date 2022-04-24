@@ -1,0 +1,167 @@
+@import url("https://fonts.google.com/specimen/Raleway");
+
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll;
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-bg);
+    color: var(--white);
+  }
+  body::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+  }
+
+html{
+    font-size: 14px;
+}
+:root {
+  /*Headings, Call-to-actions, Header Navigation*/
+  --capstone-font: "Raleway", sans-serif;
+  /*Body*/
+  --body-font: "Open Sans", sans-serif;
+  /*intro and email sign up background*/
+  --dark-blue: hsl(217, 28%, 15%);
+  /*main background*/
+  --main-bg: hsl(218, 28%, 13%);
+  /*footer background*/
+  --footer-bg: hsl(216, 53%, 9%);
+  /*testimonials background*/
+  --testimonials-bg: hsl(219, 30%, 18%);
+  /*inside call-to-action gradient*/
+  --cyan: hsl(176, 68%, 64%);
+  /*inside call-to-action gradient*/
+  --blue: hsl(198, 60%, 50%);
+  /*error*/
+  --error: hsl(0, 100%, 63%);
+  --white: hsl(0, 0%, 100%);
+}
+header {
+  background-image: url("Hero.png");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: top 14.5rem center;
+  height: 55rem;
+  max-height: 100%;
+ 
+}
+.capstone {
+  font-family: var(--rale-font);
+}
+
+
+.flex-container{
+    display:flex;
+}
+.fylo-logo{
+    background-image: url("logo.svg");
+    background-repeat: no-repeat; 
+    background-position: center;
+    width:15rem;
+    height:15rem;
+ background-size: 80%;
+    max-width: 100%;
+    
+}
+nav{
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 5px 5px;
+}
+ul {
+  list-style: none;
+}
+.space{
+    display:inline;
+    padding:5px 5px;
+}
+.raph{
+    list-style: none;
+    flex-direction:row;
+    gap: 4.3rem;
+    font-size: 20px;
+    font-weight: 400;
+    margin-right: 0.4rem;
+    color:hsl(0, 0%, 100%);
+    font-family: 'Raleway';
+
+}
+h1{
+    color:hsl(0, 0%, 100%);
+   
+}
+p{
+  color:hsl(0, 0%, 100%);
+
+}
+.topnav-right {
+    float:right;
+  }
+  .descrip{
+      text-align:center;
+      background-color: var(--dark-blue);
+      background-image: url("bg-curvy-desktop.svg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+       font-family: 'Raleway';
+    }
+  .section1{
+    flex-direction: column;
+    gap: 2.6rem;
+    margin: 0 auto;
+    padding-top: 0.4rem;
+    width: 50%;
+    font-family: 'Raleway';
+
+  }
+  .descrip h1 {
+    font-size: 2.6rem;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    line-height: 2.5rem;
+    
+    
+  }
+  .descrip p {
+    font-size: 1.4rem;
+    padding: 0 3.5rem;
+    line-height: 2rem;
+    word-spacing: 2px;
+
+  }
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .descrip a {
+    background: linear-gradient(90deg, var(--cyan), var(--blue));
+    color: var(--white);
+    border-radius: 35px;
+    margin: 0 auto;
+    padding: 1.4rem;
+    width: 33%;
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+  .secnd-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 6.4rem;
+    row-gap: 7.5rem;
+    width: 65%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 12rem;
+  }
